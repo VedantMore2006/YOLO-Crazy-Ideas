@@ -11,7 +11,7 @@ model = YOLO("yolov8n.pt")
 model.fuse()  # CHANGED: fuse model layers once for slightly faster inference
 
 # Open webcam (0 = default webcam)
-cap = cv2.VideoCapture(2)
+cap = cv2.VideoCapture(0)
 
 # Set camera to capture at low resolution natively (no software downscaling)
 CAPTURE_WIDTH = 426
